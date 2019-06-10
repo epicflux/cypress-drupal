@@ -1,2 +1,2 @@
 # cypress-drupal
-A collection of usefull Cypress commands for Drupal.
+A collection of useful Cypress commands for Drupal.
