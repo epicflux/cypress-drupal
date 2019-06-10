@@ -1,0 +1,25 @@
+{
+  "name": "cypress-drupal",
+  "version": "1.0.0",
+  "description": "Cypress Commands for Drupal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epicflux/cypress-drupal.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Testing",
+    "Cypress.io",
+    "Drupal"
+  ],
+  "author": "Jeremy Isett <epicflux@hotmail.com>",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/epicflux/cypress-drupal/issues"
+  },
+  "homepage": "https://github.com/epicflux/cypress-drupal#readme"
+}
