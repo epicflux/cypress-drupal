@@ -13,9 +13,18 @@ Include this package into your Cypress command file:
 import 'cypress-drupal';
 ```
 
+Optional: Add the string for running drush commands to cypress.json:
+
+{
+  ...
+  "env": {
+    "drupalDrushCmdLine": "/user/bin/drush %command"
+  }
+}
+
 ## Commands
 ### Drupal Collection
-#### drupalLogin( username , password) 
+#### drupalLogin( username , password ) 
 Begins the user's authenticated session.
 ```JavaScript
 cy.drupalLogin('admin', 'admin')
@@ -25,4 +34,14 @@ cy.drupalLogin('admin', 'admin')
 Ends the user's authenticated session.
 ```JavaScript
 cy.drupalLogout()
+```
+
+#### drupalDrushCommand( command )
+Issues a drush command.
+
+The command can be passed as string or an array. 
+```JavaScript
+cy.drupalDrushCommand('status');
+
+cy.drupalDrushCommand(['upwd', 'admin', 'admin']);
 ```
